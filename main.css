@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;1000&family=Dancing+Script:wght@400;500&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@400;700;800&family=Kumbh+Sans:wght@400;700&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;700&family=Nunito:wght@400;500;700&family=Open+Sans:wght@400;700&family=Overpass:wght@400;700&family=Playfair+Display:ital,wght@1,400;1,800&family=Poppins:ital,wght@0,100;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    font-family: Inter;
+    margin: 0;
+    padding: 0;
+    
+}
+html{
+    font-size: 15px;
+}
+body{
+    max-width: 1000px;
+    margin: auto;
+    
+}
+hr{
+    margin: 15px 0;
+    opacity: 0.4;
+
+}
+
+.container{
+    margin: 50px 80px
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.top .top-left img{
+}
+.top .top-right img{
+   display: none;
+}
+
+.top .top-right ul{
+    display: flex;
+    
+}
+
+
+.top .top-right li{
+    list-style: none;
+    margin-left: 30px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.top .top-right li:hover{
+    color: #f8aa3b;
+    
+}
+
+.middle{
+    display: flex;
+    justify-content: space-between;
+    gap: 3%;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+.middle .middle-left{
+    width: 70%;
+}
+.middle .middle-left img{
+    width: 100%;
+}
+.middle .middle-left-text{
+    display: flex;
+    gap: 4%;
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
+.middle .middle-left-text h1{
+    width: 48%;
+    font-size: 3em;
+}
+.middle .middle-left-text div{
+    width: 48%;
+}
+.middle .middle-left-text p{
+    color: gray;
+}
+.middle .middle-left-text button{
+    padding: 15px;
+    width: 60%;
+    background: red;
+    border: 0;
+    cursor: pointer;
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.middle .middle-left-text button:hover{
+    background-color: black;
+    color: #fff;
+}
+
+
+.middle .middle-right{
+    width: 27%;
+    background-color: black;
+    padding: 30px;
+}
+.middle .middle-right .title{
+    color: #f8aa3b;
+    margin-bottom: 10%;
+}
+.middle .middle-right-text{
+    height: 90%;
+}
+.middle .middle-right-text div{
+
+ 
+}
+.middle .middle-right-text div h1{
+    color: #fff;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 1.5em
+ 
+}
+.middle .middle-right-text div h1:hover{
+    color: #f8aa3b;
+    
+}
+.middle .middle-right-text div p{
+    color: #ccc;
+ 
+}
+
+
+
+
+.buttom{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+
+    
+}
+.buttom .buttom-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttom .buttom-box img{
+    margin-right: 35px;
+    height: 120px;
+}
+.buttom .buttom-box span{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: gray;
+}
+.buttom .buttom-box h1{
+    font-size: 1em;
+}
+.buttom .buttom-box p{
+    font-size: 0.7em;
+    margin-top: 15px;
+}
+
+@media (max-width:750px) {
+    .container{
+        margin: 25px;
+    }
+   
+    .top .top-right img{
+        display: block;
+     }
+    .top .top-right ul{
+        position: absolute;
+        display: none;
+        right: -2px;
+        background: white;
+        height: 100%;
+        z-index: 9999;
+        width: 50%;
+    }
+    .on.top-right ul{
+        display: block;
+    }
+  
+    .top .top-right li {
+        padding: 23px 0 10px 17px;
+    }
+    .middle{
+        flex-direction: column;
+    }
+    .middle .middle-left{
+        width: 100%;
+    }
+    .middle .middle-right{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .middle .middle-left-text{
+        flex-direction: column;
+        
+    }
+  
+    .middle .middle-left-text h1{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .middle .middle-left-text div {
+        width: 100%;
+    }
+    .buttom{
+        grid-template-columns: repeat(1,1fr);
+        gap: 15px;
+    }
+    .buttom .buttom-box{
+        justify-content: start;
+    }
+}
+
+
+
+
